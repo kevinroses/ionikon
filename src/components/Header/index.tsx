@@ -424,21 +424,7 @@ export default function Header() {
             </CampaignWrapper>
           )}
           <AboutWrapper>
-            <HoverDropdown active={pathname.toLowerCase().includes('about')}>
-              <Flex alignItems="center">
-                <Trans>About</Trans>
-                <DropdownIcon />
-              </Flex>
-              <Dropdown>
-                <StyledNavLink id={`about-kyberswap`} to={'/about/metabeoswap'} isActive={match => Boolean(match)}>
-                  <Trans>MetabeoSwap</Trans>
-                </StyledNavLink>
-
-                <StyledNavLink id={`about-knc`} to={'/about/meo'} isActive={match => Boolean(match)}>
-                  <Trans> MEO</Trans>
-                </StyledNavLink>
-              </Dropdown>
-            </HoverDropdown>
+         
           </AboutWrapper>
         </HeaderLinks>
       </HeaderRow>
